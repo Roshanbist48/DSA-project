@@ -1,0 +1,167 @@
+/* General Styles */
+.playing-page-wrapper {
+  background: url('../assets/playing.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh; /* Updated: min-height for better responsiveness */
+  overflow-x: hidden; /* Updated: Prevent horizontal scrolling */
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px; /* Updated: Increased max-width */
+  background: rgba(0, 0, 0, 0.7); /* Updated: Darker background for contrast */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px); /* Updated: Slightly increased blur */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); /* Updated: More prominent shadow */
+  padding: 25px; /* Updated: Increased padding */
+  border-radius: 12px; /* Updated: Slightly larger border radius */
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+h1 {
+  font-size: 26px; /* Updated: Increased font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff7200;
+  margin-bottom: 25px; /* Updated: Increased margin */
+}
+
+/* Teams Layout */
+.teams-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px; /* Updated: Increased gap */
+  margin-top: 25px; /* Updated: Increased margin-top */
+  flex-wrap: wrap; /* Updated: Ensures responsiveness */
+}
+
+/* Team Box */
+.team {
+  width: 45%; /* Updated: Adjusted width */
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px; /* Updated: Increased padding */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 5px 12px rgba(255, 255, 255, 0.2); /* Updated: Improved shadow */
+}
+
+/* Team Name Input */
+.team-name {
+  width: 100%;
+  padding: 10px; /* Updated: Increased padding */
+  margin-bottom: 18px; /* Updated: Increased margin-bottom */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Player Box */
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Updated: Slightly brighter background */
+  padding: 10px; /* Updated: Increased padding */
+  margin-bottom: 10px; /* Updated: Increased margin-bottom */
+  border-radius: 6px; /* Updated: Slightly larger border radius */
+}
+
+/* Input (Player Name) */
+.player input {
+  padding: 8px; /* Updated: Increased padding */
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6); /* Updated: More contrast */
+  border-radius: 0;
+  font-size: 15px; /* Updated: Increased font size */
+  flex: 1;
+  background: transparent;
+  color: white;
+  outline: none;
+  margin-right: 12px; /* Updated: Added more spacing */
+}
+
+/* Dropdown */
+.player select {
+  padding: 8px; /* Updated: Increased padding */
+  border: none;
+  border-radius: 6px; /* Updated: More rounded corners */
+  font-size: 14px; /* Updated: Increased font size */
+  background: rgb(100, 100, 100);
+  color: white;
+  cursor: pointer;
+}
+
+/* Submit Button */
+button {
+  background: #ff7200;
+  color: white;
+  font-size: 18px;
+  padding: 12px 22px; /* Updated: Increased padding */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 25px; /* Updated: Increased margin */
+  box-shadow: 0 4px 8px rgba(255, 114, 0, 0.3); /* Updated: Added slight shadow */
+}
+
+button:hover {
+  background: #e66000;
+  box-shadow: 0 6px 12px rgba(255, 114, 0, 0.5); /* Updated: Stronger shadow */
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #b3b3b3; /* Updated: Slightly darker disabled color */
+  cursor: not-allowed;
+}
+
+/* Add Player Button */
+.add-player {
+  font-size: 15px; /* Updated: Increased font size */
+  padding: 7px 14px; /* Updated: Increased padding */
+  margin-top: 12px; /* Updated: Slightly increased margin */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px; /* Updated: Increased padding */
+  }
+
+  .teams-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team {
+    width: 100%; /* Updated: Full width on smaller screens */
+    margin-bottom: 25px; /* Updated: Increased margin-bottom */
+  }
+
+  h1 {
+    font-size: 22px; /* Updated: Adjusted font size */
+  }
+
+  .player input,
+  .player select {
+    font-size: 13px;
+    padding: 6px;
+  }
+}

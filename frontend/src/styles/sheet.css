@@ -1,0 +1,266 @@
+/* General Styles */
+.sheet-page-wrapper {
+  background: url('../assets/playing.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  width: 95%;
+  max-width: 850px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#match-title {
+  font-size: 20px;
+  color: #ff7200;
+  margin: 0;
+}
+
+/* Score Section Styles */
+.score-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#score {
+  font-size: 24px;
+  color: #ff7200;
+  margin: 0;
+}
+
+#crr {
+  font-weight: bold;
+  color: #ff7200;
+}
+
+/* Player Selection Styles */
+.player-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.batsmen-selection,
+.bowler-selection {
+  width: 48%;
+}
+
+.player-selection h3 {
+  margin: 0 0 5px 0;
+  color: #ff7200;
+  font-size: 16px;
+}
+
+.player-selection select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(14, 13, 13);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Score Table Styles */
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.score-table th,
+.score-table td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  text-align: center;
+}
+
+.score-table th {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ff7200;
+}
+
+/* Extras Section Styles */
+.extras-section {
+  margin-bottom: 10px;
+}
+
+.extras-section h3 {
+  color: #ff7200;
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.extras-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.extra-item {
+  display: flex;
+  justify-content: space-between;
+  width: calc(50% - 5px);
+}
+
+.extra-item.total {
+  width: 100%;
+  font-weight: bold;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+/* Extras Checkbox Styles */
+.extras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.extras label {
+  display: flex;
+  align-items: center;
+}
+
+.extras input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Button Styles */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.score-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #ff7200;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #e66000;
+}
+
+.score-buttons button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 98%;
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .player-selection,
+  .extras-display {
+    flex-direction: column;
+  }
+
+  .batsmen-selection,
+  .bowler-selection,
+  .extra-item {
+    width: 100%;
+  }
+
+  .score-table {
+    font-size: 12px;
+  }
+
+  .score-table th,
+  .score-table td {
+    padding: 3px;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .score-buttons button {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
+
+/* Start Match Button */
+.start-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff7200;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #ff7200;
+}
+
+.start-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+

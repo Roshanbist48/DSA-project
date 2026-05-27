@@ -1,0 +1,128 @@
+/* General Styles */
+.score-page-wrapper {
+    background: url('../assets/playing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff7200;
+    margin-bottom: 20px;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio Groups */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+/* Button Group */
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.start-button {
+    background: #ff7200;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(255, 114, 0, 0.3);
+}
+
+.start-button:hover {
+    background: #e66000;
+    box-shadow: 0 6px 12px rgba(255, 114, 0, 0.5);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .start-button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
